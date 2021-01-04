@@ -168,19 +168,7 @@
 <script src="js/functions.js"></script>
 <script src="js/menu_responsivo.js"></script>
 <script src="js/menuScroll.js"></script>
-<?php
 
-if(isset($_GET['url'])){
-	if(file_exists($_GET['url']).'.html'){
-		incluide($_GET['url'].'.html');
-	}else{
-		incluide('404.html');
-	}
-	}else{
-	incluide('home.html');
-}
-	
-?>
 </script>
 </body>
 </html>
