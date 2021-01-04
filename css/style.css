@@ -1,0 +1,500 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/*Header-Menu desktop*/
+
+header{
+	padding:20px 2%; 
+	height:180px;
+	background: black;
+}
+
+.logo{
+	position: relative;
+	background-image: url('../imagens/logo3.jpg');
+	top: -20%;
+	float: left;
+	width: 200px;
+	height: 160px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+.menu-desktop{
+	float: right;
+	margin-top: 50px;
+	display: block;
+}
+
+.menu-desktop ul{
+	padding: 8px 0;
+	list-style-type: none; 
+}
+
+.menu-desktop ul li{
+	text-transform: uppercase;
+	float: left;
+	padding: 0 20px;
+}
+
+header ul a{
+	text-decoration: none;
+	color:white;
+}
+
+nav.menu-mobile{
+	margin-top: 40px;
+	width: 32px;
+	height: 32px;
+	background-size: 100% 100%;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+
+nav.menu-mobile ul{
+	width: 100%;
+	left: 0;
+	top: 90px;
+	border-bottom:4px solid #000000;
+	text-align: center;
+	z-index: 999;
+	position:absolute;
+	background-color: white;
+	display: none;
+}
+
+.menu-mobile li{
+	font-size: 20px;
+	padding: 18px 0px;
+}
+
+.menu-mobile li a{
+	color: black;
+	text-decoration: none;
+}
+
+/*fim do header*/
+
+/*banner*/
+
+section.banner{
+	overflow:hidden;
+	width: 100%;
+	height: 590px;
+	background-color: #1C1C1C;
+	background-image: url('../imagens/banner2.jpg');
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-size: 1150px 520px;;
+}
+
+.texto-chamada{
+	text-align: center;
+	margin: 230px;
+}
+
+.texto-chamada h2{
+	color: white;
+	font-size: 35px;
+	font-weight: 300;
+}
+
+.texto-chamada input[type=submit]{
+	border: 0;
+	background-color: white;
+	width: 280px;
+	height: 80px;
+	font-size: 13px;
+	color: black;
+	margin-top:15px;
+	border-radius: 30px;
+}
+
+/*fim*/
+
+
+/*servicos*/
+
+section.servicos{
+	background-color: black;
+	padding: 30px 0;
+}
+
+section.servicos > .container{
+	align-items: center;
+	position: relative;
+	text-align: center;
+	top: 0px;
+	display: flex;
+}
+
+.loja-wraper{
+	width: 33.3%;
+	padding: 20px;
+}
+
+.box-single-loja{
+	height: 100%;
+	border: 1px solid rgb(225,225,225);
+}
+
+.box-single-loja img{
+	max-width: 100%;
+}
+
+.box-single-loja h2{
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	padding: 0 8px;
+}
+
+.box-single-loja p{
+	color: white;
+	padding:15px 8px;
+	font-size: 15px;
+}
+
+/*sobre-profissional*/
+
+section.perfil{
+	background-color:#1C1C1C; 
+}
+
+section.perfil .perfil-wraper{
+	padding-top:40%;
+	position: relative;
+}
+
+section.perfil .perfil-wraper2{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 70%;
+}
+
+section.perfil .img-perfil{
+	width: 40%;
+	height: 110%;
+	background-image: url('../imagens/Profissional-foto1.png');
+	background-size: 100% 100%;
+}
+
+section.perfil .texto-perfil{
+	width: 60%;
+	padding:0 30px;
+}
+
+section.perfil .texto-perfil h2{
+	 color: white;
+	 font-size: 18px;
+}
+
+section.perfil .texto-perfil p{
+	color:white ;
+	font-size: 14px;
+	margin-top:8px;
+}
+
+/*Fim*/
+
+/*Formulario*/
+
+section.sessao4{
+	background-color: black;
+	padding:100px 0;
+}
+
+
+.form{
+	float: left;
+	width: 50%;
+	color: white;
+	padding-left: 10px;
+}
+
+.form h2{
+	text-align: center;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+	
+}
+
+.form form{
+	margin-top:15px;
+}
+
+.form_contato input[type=text],
+.form_contato input[type=email]{
+	width: 80%;
+	max-width: 800px;
+	margin-top:8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border:1px solid rgb(200,200,200);
+}
+
+.form form textarea{
+	width: 80%;
+	margin-top:8px;
+	max-width: 800px;
+	padding:15px;
+	border:1px solid rgb(200,200,200);
+	height: 160px;
+	resize:none;
+}
+
+.form_contato input[type=submit]{
+	border: 0;
+	background-color: #FF703D;
+	width: 165px;
+	height: 44px;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top:15px;
+	border-radius: 30px;
+}
+
+.map-wraper{
+	float: left;
+	width: 50%;
+	padding:0 10px;
+	color: white;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top:10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	padding-top:100%;
+}
+
+.map{
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	border:5px solid rgb(200,200,200);
+}
+
+
+/*Fim*/
+
+/*Footer*/
+footer{
+	padding: 40px 2%;
+	background-color: #1d1d1d;
+}
+
+footer .container{
+	max-width: 900px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top: 8px;
+	color: white;
+	font-size: 14px;
+}
+
+
+.footer2{
+	text-align: center;
+	padding: 8px 2%;
+	background: #4F4F4F;
+}
+
+.footer2 h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer2 p{
+	margin-top: 8px;
+	color: white;
+	font-size: 14px;
+}
+
+@media screen and (max-width:768px){
+	nav.menu-desktop{
+		display: none;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	section.banner{
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	background-size:cover; 
+}
+
+.texto-chamada{
+	text-align: center;
+	margin: 100px;
+}
+
+.texto-chamada h2{
+	color: white;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+section.servicos > .container{
+	flex-direction: column;
+	margin: 50px;
+}
+
+.loja-wraper{
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	margin:30px auto;
+}
+
+.box-single-loja h2{
+	font-size: 25px;
+}
+
+.box-single-loja p{
+	font-size: 15px;
+}
+
+section.perfil .perfil-wraper{
+	padding-top:10%;
+}
+
+section.perfil .perfil-wraper2{
+	height: auto;
+	position: static;
+	display: inline-block;
+	text-align: center;
+}
+
+section.perfil .img-perfil{
+	width: 50%;
+	padding-top: 70%;
+	display: inline-block;
+	height: auto;
+}
+
+
+section.perfil .texto-perfil{
+	display: inline-block;
+	text-align: justify;
+	width: 100%;
+	padding:0 30px;
+}
+
+section.sessao4 .container{
+	text-align: center;
+}
+
+.form{
+	float: none;
+	width: 100%;
+}
+
+.form p{
+	display: inline-block;
+	float: none;
+}
+
+.map-wraper{
+	float: none;
+	width: 100%;
+	padding:0 8%;
+	margin-top:40px;
+}
+
+
+.map-wraper3{
+	margin-top:10px;
+	width: 100%;
+	padding-top: 100%;
+	display: inline-block;
+	max-width: none;
+	position: relative;
+}
+
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	padding-top:0;
+}
+
+footer{
+text-align: center;
+}
+
+footer .footer-block{
+	float: none;
+	width: 100%;
+	margin: 30px 0;
+}
+
+
+}
+
